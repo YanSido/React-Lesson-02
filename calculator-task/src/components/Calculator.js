@@ -15,19 +15,23 @@ const Calculator = (props) => {
     }
     
     const checkValidation = (ex) =>{
-        if (ex.split("/")[0] === "" || ex.split("/")[1] === ""){
+        try{
+            eval(ex)
+            if (ex.split("/")[0] === "" || ex.split("/")[1] === "")return false
+                
+            if (ex.split("*")[0] === "" || ex.split("*")[1] === "")return false
+                
+            if (ex.split("+")[0] === "" || ex.split("+")[1] === "")return false
+                
+            if (ex.split("-")[0] === "" || ex.split("-")[1] === "")return false
+                
+            return true
+        }catch{
             return false
         }
-        if (ex.split("*")[0] === "" || ex.split("*")[1] === ""){
-            return false
-        }
-        if (ex.split("+")[0] === "" || ex.split("+")[1] === ""){
-            return false
-        }
-        if (ex.split("-")[0] === "" || ex.split("-")[1] === ""){
-            return false
-        }
-        return true
+        
+        
+        
     }
 
     const handleClick = (e) =>{

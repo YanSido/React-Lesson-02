@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+body{
+    background-color: #c2c2d6 !important;
+}
+
+#title{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#root {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-div {
+    
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: black;
+  width: 255px;
+}
+
+
+
+
+button {
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  font-size: 20px;
+  
+}
+
+
+#equals{
+    padding-left: 79px;
+    padding-right: 79px;
+    font-size: 30px;
+    
+}
+
+#zero{
+    padding-left: 119px;
+    padding-right: 119px;
+}
+
+#add{
+    padding-left: 59px;
+    padding-right: 59px;
+}
+
+#subtract{
+    padding-left: 59px;
+    padding-right: 59px;
+}
+
+#input{
+    background-color: black;
+    font-size: 29px;
+    font-family: digital;
+    color: white;
+    text-align: left;
+    line-height: 35px;
+    width: 255px;
+}
+
