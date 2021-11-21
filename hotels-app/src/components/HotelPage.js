@@ -1,5 +1,5 @@
 import React from "react"
- 
+import CallNowButton from "./CallNowButton"
 class HotelPage extends React.Component {
     render() {
       return (
@@ -9,7 +9,8 @@ class HotelPage extends React.Component {
                 <div class="card-body text-center">
                     <h5 class="card-title">{this.props.name}</h5>
                     <p class="card-text">{"רחוב: " + this.props.street + " " + this.props.house}</p>
-                    <p class="card-title">{"טלפון: " + this.props.phone}</p>
+                    
+                    <p class="card-title">{"טלפון: "}<CallNowButton phone={this.props.phone}/></p>
                 </div>
             </div>
          </>
