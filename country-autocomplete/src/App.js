@@ -1,4 +1,3 @@
-import React from 'react'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import OptionsDropdown from './components/OptionsDropdown'
 import { useState } from 'react';
@@ -11,11 +10,10 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showCountries, setShowCountries] = useState(false);
   const [showClear, setShowClear] = useState(false);
-  
   return(
     <div >
       <h1 className = "text-center mt-3">All Countries</h1>
-      <div >
+      <div id ="search-div">
         <SearchBar
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}
@@ -26,6 +24,11 @@ function App() {
         showCountries={showCountries}
         setShowCountries={setShowCountries}
         />
+
+      {showClear && <ClearButton
+      setSearchQuery={setSearchQuery}
+      setShowClear={setShowClear}
+      />}
       </div>
 
       <OptionsDropdown
@@ -36,10 +39,7 @@ function App() {
       setSearchQuery={setSearchQuery}
       />
 
-      {showClear && <ClearButton
-      setSearchQuery={setSearchQuery}
-      setShowClear={setShowClear}
-      />}
+      
     </div>
   )
 }
