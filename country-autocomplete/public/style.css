@@ -1,0 +1,36 @@
+
+#options{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(219, 208, 219);
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#country-option{
+    cursor: pointer;
+    margin-bottom: 2px;
+    border: 1px solid black;
+}
+
+#country-option:hover{
+    background-color: rgb(184, 179, 184);
+}
+
+#togglebutton{
+    cursor: pointer;
+    width: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clear-btn{
+    cursor: pointer;
+    margin-left: 50%;
+}
